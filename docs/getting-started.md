@@ -88,5 +88,5 @@ See the full bash code [check-for-update.sh](curl/check-for-update.sh)
 
 This call will return eiter a empty json object if there where no update or a uppdate manifest.
 
-For more information: [check-for-update](../docs/report.md)
+For more information: [check-for-update](../docs/check-for-update.md)
 
