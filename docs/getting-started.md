@@ -49,7 +49,7 @@ EOF
 RESULT=$(curl -X POST -d @product.json $GAUS_URL/register -s -H "Content-Type: application/json; charset=utf-8")
 echo $RESULT
 ```
-See full bash code [register.sh](curl/register.sh)
+See full bash code [register.sh](../curl/register.sh)
 
 Save the unique device access and secret in a file called: device.data
 
@@ -67,7 +67,7 @@ curl -X POST \
      $GAUS_URL/authenticate"
 
 ```
-See the full bash code [check-for-update.sh](curl/check-for-update.sh)
+See the full bash code [check-for-update.sh](../curl/check-for-update.sh)
 
 Save the TOKEN, PRODUCT_GUID and DEVICE_GUID in a session object.
 
@@ -84,7 +84,7 @@ curl -X GET \
      -H "Content-Type: application/json" \
      "$GAUS_URL/device/$PRODUCT_GUID/$DEVICE_GUID/check-for-updates?firmware-version=1.0.0&location=swe"
 ```
-See the full bash code [check-for-update.sh](curl/check-for-update.sh)
+See the full bash code [check-for-update.sh](../curl/check-for-update.sh)
 
 This call will return eiter a empty json object if there where no update or a uppdate manifest.
 

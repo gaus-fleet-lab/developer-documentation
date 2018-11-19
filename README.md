@@ -1,14 +1,16 @@
 # Developer documentation for GAUS client
 
-For more information what GAUS is, check out [this](https://gaus.incubation.io/)
+For more information what GAUS is, check out [GAUS homepage](https://gaus.incubation.io/)
 
 
 This documentation will describe how to:
 * Getting started with dummy Curl client [link](docs/getting-started.md)
-* Connect a device to GAUS [TODO Link]()
-* Get a update from GAUS [TODO Link]()
-* Send metrics/events to GAUS [TODO Link]()
-
+* OVerivew, client, GAUS communcation [link](docs/overview.md)
+* Device API
+  * [Register](docs/register.md)
+  * [Authentication](docs/authentication.md)
+  * [Check for update](docs/check-for-update.md)
+  * [Report](docs/report.md)
 
 
 ## License
