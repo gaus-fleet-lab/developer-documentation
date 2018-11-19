@@ -47,3 +47,29 @@ while(1) {
 }
 
 ```
+
+## JWT token
+
+The JWT token that is returned [rfc7519](https://tools.ietf.org/html/rfc7519) from the authentication call has this structure:
+
+```javascript
+{
+  "sub": "440a7da3-0505-4528-9920-1e47c0e06c11:3b043c10-687c-49fe-ab20-a289197478ae",  //Subject
+  "aud": "",
+  "jti": "85d6f550-85fd-4135-b153-2b631b961c4f",    // JWT ID
+  "pi": "440a7da3-0505-4528-9920-1e47c0e06c11",     // GAUS added field: ProductGUID
+  "di": "3b043c10-687c-49fe-ab20-a289197478ae",     // GAUS added field: DeviceGUID
+  "iat": 1541073637,                                // Issued At
+  "exp": 1541077237                                 // Expiration Time
+}
+```
+
+For more details of the different fields, see the iso standard [documentation](https://tools.ietf.org/html/rfc7519#section-4.1)
+
+The productGUID and deviceGUID exist both in the JWT token and in the return JSON for easier extraction for the client.
+
+The GAUS JWT token grant access to:
+```javascript
+    'GET', `/device/${productGUID}/${deviceGUID}/*`
+    'POST', `/device/${productGUID}/${deviceGUID}/*    
+```
