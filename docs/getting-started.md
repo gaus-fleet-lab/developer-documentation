@@ -58,7 +58,7 @@ For more information: [authentication](../docs/authentication.md)
 ### Authenticate
 Before using the check-for-update or the report API, the device need to authenticate it self vi the authenticate API.
 The device will use the creedentials that was saved down from the register. When the device has registered it will
-get a uniqe JWT token that is used for access the check-for-update and report API. For an overview see [overview picture](TODO)
+get a uniqe JWT token that is used for access the check-for-update and report API. For an overview see [overview picture](../docs/overview.md)
 
 ```
 curl -X POST \
