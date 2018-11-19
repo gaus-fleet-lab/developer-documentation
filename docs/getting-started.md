@@ -17,7 +17,7 @@ boarding devices. Save the those values in a file called bootstrap.conf.
  
 In bootstrap.conf file, add also:
 * Device ID - device specific and could be for example MAC, series number or other id:s.
-* GAUS URL - deivice API URL
+* GAUS URL - device API URL
 
 ```
 cat <<EOT >> bootstrap.conf
@@ -56,9 +56,9 @@ Save the unique device access and secret in a file called: device.data
 For more information: [authentication](../docs/authentication.md)
 
 ### Authenticate
-Before using the check-for-update or the report API, the device need to authenticate it self vi the authenticate API.
-The device will use the creedentials that was saved down from the register. When the device has registered it will
-get a uniqe JWT token that is used for access the check-for-update and report API. For an overview see [overview picture](../docs/overview.md)
+Before using the check-for-update or the report API, the device need to authenticate it self via the authenticate API.
+The device will use the credentials that was saved down from the register. When the device has registered it will
+get a unique JWT token that is used for access the check-for-update and report API. For an overview see [overview picture](../docs/overview.md)
 
 ```
 curl -X POST \
@@ -86,7 +86,7 @@ curl -X GET \
 ```
 See the full bash code [check-for-update.sh](../curl/check-for-update.sh)
 
-This call will return eiter a empty json object if there where no update or a uppdate manifest.
+This call will return either a empty json object if there where no update or a update manifest.
 
 For more information: [check-for-update](../docs/check-for-update.md)
 

@@ -40,7 +40,7 @@ Content-Type: application/json
 ``` 
 You as device owner can create your own data type without define it in the GAUS admin UI before but there are some pre-define types.
 
-The main strucuture is that all types that start with event.* will end up in ES and all data types that started with
+The main structure is that all types that start with event.* will end up in ES and all data types that started with
 metric.* will end up in influxDB
 List of reserved data types:
 
@@ -65,7 +65,7 @@ This event should be sent under a client update. Update Id is used to get the in
 Where: 
 * v_strings.phase - [download, verify, install]
 * v_strings.status -   [success, failed]
-* v_strings.updateId -  (The updateId is part of the updatemanifest from [check-for-update](../docs/check-for-update.md)
+* v_strings.updateId -  (The updateId is part of the update manifest from [check-for-update](../docs/check-for-update.md)
 * v_strings.statusCode (Optional) - internal status code in the device
 * v_strings.logLine (Optional) - Error message
 
@@ -91,7 +91,7 @@ Where:
 A gauge is a metric that represents a single numerical value that can arbitrarily go up and down.
 
 Gauges are typically used for measured values like temperatures or current memory usage, but also "counts" that
- can go up and down, like the number of running goroutines.
+ can go up and down, like the number of running processes.
  
 ```javascript
 { 
@@ -106,7 +106,7 @@ Gauges are typically used for measured values like temperatures or current memor
 }
 ```
 where:
-* v_ints.* - for insts
+* v_ints.* - for ints
 * v_floats.* - for floats
 
 ##### metric.counter.*
@@ -130,5 +130,5 @@ Do not use a counter to expose a value that can decrease. For example, do not us
   "tags": {"hostname": "myhost888", ...}
 ```
 where:
-* v_ints.* - for insts
+* v_ints.* - for ints
 * v_floats.* - for floats

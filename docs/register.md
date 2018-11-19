@@ -1,21 +1,21 @@
 # Register
 
 When register the device, the device will use the product secret and the access key to authenticate and get back
-an unique device secert and access key that will be used for the device entire life time.
+an unique device secret and access key that will be used for the device entire life time.
 
 The register can be done in different places:
 * In factory - before flashing the device, factory could do a register and save the device unique key together with
  the firmware
 * Manually - before the device is mounted, sold it, there can be a script that do the register and save down the
  device unique key into the device
-* First start up - when the device start up for the firsta time, the device it self can to the register
+* First start up - when the device start up for the first time, the device it self can to the register
 
 
 ## Step by step
 * Read the "bootstrap.conf" and extract the product accessKey, secretKey and URL to the Gaus server
 
 * Extract/create/retrieve the deviceId (Could be MAC address, serie-nummer or generated data)
-  There is no check that the deviceId will be uniqe on the backend, meaning that you can register two devices
+  There is no check that the deviceId will be unique on the backend, meaning that you can register two devices
   with the same deviceId but the devices will get two unique deviceGUID.
 
 * POST the to the register url with the deviceId, product accessKey and product secretKey

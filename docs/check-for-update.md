@@ -6,8 +6,8 @@ return that in a update manifest.
 **Prerequisites:** The device has done an [authentication](../docs/authentication.md) the retrieved Token, productGUID and
 deviceGUID
 
-The device will present it self in the check-for-update API with help of "query-parameters" that is defiended
-in the product that the device belongs to. If there exist for example a mandatory parameter namend "location",
+The device will present it self in the check-for-update API with help of "query-parameters" that is defined
+in the product that the device belongs to. If there exist for example a mandatory parameter named "location",
 and the check-for-update does not provide it, the device will get a http 400 "Bad request".
 (Currently firmware-version is mandatory)
 

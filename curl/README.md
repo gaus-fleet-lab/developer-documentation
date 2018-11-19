@@ -12,8 +12,8 @@
  EOT
 
 ## 1b) Run register.sh
-* This script will "register" the device to the backend
-* It will also create a file named 'device.data' that will be used for the other scripts to access the backend. e.g.:
+* This script will "register" the device to the GAUS
+* It will also create a file named 'device.data' that will be used for the other scripts to access the GAUS. e.g.:
  ./register.sh bootstrap.conf
 
 # 2) Now you can run device-check-for-update.sh and device-report.sh

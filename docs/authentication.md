@@ -14,7 +14,7 @@ so when it expires, the device need to re-authenticate.
   }
 }
 ```
-The reponse include the deviceGUID and productGUID. The device need them to build up the URL for [check-for-update](../docs/check-for-update.md)
+The response include the deviceGUID and productGUID. The device need them to build up the URL for [check-for-update](../docs/check-for-update.md)
 and [report](../docs/report.md). This three values should be store in the session memory and could always been retrieved by doing a new /authentication
 ```javascript
 RESPONSE: OK
