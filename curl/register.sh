@@ -21,14 +21,10 @@ cat > product.json <<EOF
 EOF
 RESULT=$(curl -X POST -d @product.json $GAUS_URL/register -s -H "Content-Type: application/json")
 rm ./product.json
-PRODUCTGUID=$(echo $RESULT | jq .productGUID)
-DEVICEGUID=$(echo $RESULT | jq .deviceGUID)
 DEVICE_ACCESS_KEY=$(echo $RESULT | jq .deviceAuthParameters.accessKey)
 DEVICE_SECRET_KEY=$(echo $RESULT | jq .deviceAuthParameters.secretKey)
 
 cat > device.data <<EOF
-PRODUCTGUID=$PRODUCTGUID
-DEVICEGUID=$DEVICEGUID
 DEVICEID=$DEVICEID
 DEVICE_ACCESS_KEY=$DEVICE_ACCESS_KEY
 DEVICE_SECRET_KEY=$DEVICE_SECRET_KEY
