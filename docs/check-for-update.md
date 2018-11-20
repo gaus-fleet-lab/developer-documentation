@@ -1,9 +1,9 @@
 # Check for update
 
 The check-for-update API is a polling api where the device will ask for updates. If there exist an update, it
-return that in a update manifest.
+return that in an update manifest.
 
-**Prerequisites:** The device has done an [authentication](../docs/authentication.md) the retrieved Token, productGUID and
+**Prerequisites:** The device has done an [authentication](../docs/authentication.md) and retrieved Token, productGUID and
 deviceGUID
 
 The device will present it self in the check-for-update API with help of "query-parameters" that is defined
@@ -22,7 +22,7 @@ and the check-for-update does not provide it, the device will get a http 400 "Ba
  }
 ```
 
-## Check-for-updates (Update hit type file)
+## Check-for-updates (Update hit, type file)
 Note that there can be more then one update, but max 1 per updateType. 
 ```javascript
  Authorization: Bearer ${token}

@@ -12,7 +12,7 @@ First step is to create a Product from the Administration UI.
 * Follow instructions how to “Add Product” from the User Guide.
  User Guide is available in the upper bar in the Administration UI.
 
-* When Product is created will you get a product accessKey and secretKey to be used for on-
+* When Product is created, you will get a product accessKey and secretKey to be used for on-
 boarding devices. Save the those values in a file called bootstrap.conf.
  
 In bootstrap.conf file, add also:
@@ -53,7 +53,7 @@ See full bash code [register.sh](../curl/register.sh)
 
 Save the unique device access and secret in a file called: device.data
 
-For more information: [authentication](../docs/authentication.md)
+For more information: [register](../docs/register.md)
 
 ### Authenticate
 Before using the check-for-update or the report API, the device need to authenticate it self via the authenticate API.

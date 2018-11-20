@@ -2,7 +2,7 @@
 
 The report api is used for adding data in form of events or metrics from the device to GAUS.
 
-**Prerequisites:** The device has done an [authentication](../docs/authentication.md) the retrieved Token, productGUID and
+**Prerequisites:** The device has done an [authentication](../docs/authentication.md) and retrieved Token, productGUID and
 deviceGUID
 
 This Post object includes on version, header and a list of data where data can be of different types.
@@ -40,13 +40,13 @@ Content-Type: application/json
 ``` 
 You as device owner can create your own data type without define it in the GAUS admin UI before but there are some pre-define types.
 
-The main structure is that all types that start with event.* will end up in ES and all data types that started with
-metric.* will end up in influxDB
+The main structure is that all types that start with event.* will be handled as "events" and all data types that started with
+metric.* will be handled as metrics.
 List of reserved data types:
 
 ##### event.update.Status
 
-This event should be sent under a client update. Update Id is used to get the information about the source and target
+This event should be sent under a client update. UpdateId is used to get the information about the source and target
  versions and type. 
  ```javascript
 {

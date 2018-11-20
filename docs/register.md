@@ -6,7 +6,7 @@ an unique device secret and access key that will be used for the device entire l
 The register can be done in different places:
 * In factory - before flashing the device, factory could do a register and save the device unique key together with
  the firmware
-* Manually - before the device is mounted, sold it, there can be a script that do the register and save down the
+* Manually - before the device is mounted or sold, there can be a script that do the register and save down the
  device unique key into the device
 * First start up - when the device start up for the first time, the device it self can to the register
 

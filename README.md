@@ -5,7 +5,7 @@ For more information what GAUS is, check out [GAUS homepage](https://gaus.incuba
 
 This documentation will describe how to:
 * Getting started with dummy Curl client [link](docs/getting-started.md)
-* OVerivew, client, GAUS communcation [link](docs/overview.md)
+* Overview, client, GAUS communication [link](docs/overview.md)
 * Device API
   * [Register](docs/register.md)
   * [Authentication](docs/authentication.md)
