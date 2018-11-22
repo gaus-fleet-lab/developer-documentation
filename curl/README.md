@@ -5,11 +5,13 @@
 * Click on product and create new product, name it and optionally add some query-parameters
 * Extract the product secret and product access to a file called 'bootstrap.conf', e.g.:
 
+```javascript
  cat <<EOT >> bootstrap.conf
- GAUS_URL=https://ZZZ.sonymobile.com
+ GAUS_URL=https://<your-subdomain>.sonymobile.com
  PRODUCT_ACCESS_KEY=XXX
  PRODUCT_SECRET_KEY=YYY
  EOT
+```
 
 ## 1b) Run register.sh
 * This script will "register" the device with the GAUS backend

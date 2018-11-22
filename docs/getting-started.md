@@ -14,6 +14,7 @@ First step is to create a Product from the Administration UI.
 
 * When a Product is created, you will get a product accessKey and secretKey to be used for on-
 boarding devices. Save the those values in a file called bootstrap.conf.
+(They cannot be retrieved again)
  
 In bootstrap.conf file, add also:
 * Device ID - device specific and could be for example MAC, series number or other id:s.
@@ -21,7 +22,7 @@ In bootstrap.conf file, add also:
 
 ```
 cat <<EOT >> bootstrap.conf
- GAUS_URL=https://ZZZ.gaus.sonymobile.com
+ GAUS_URL=https://<your-subdomain>.gaus.sonymobile.com
  PRODUCT_ACCESS_KEY=XXX
  PRODUCT_SECRET_KEY=YYY
  DEVICEID=AAA

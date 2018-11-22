@@ -14,7 +14,7 @@ so when it expires, the device need to re-authenticate.
   }
 }
 ```
-The response include the deviceGUID and productGUID. The device need them to build up the URL for [check-for-update](../docs/check-for-update.md)
+The response includes the deviceGUID and productGUID. The device needs them to build up the URL for [check-for-update](../docs/check-for-update.md)
 and [report](../docs/report.md). These three values should be stored in the session memory and can always been retrieved by doing a new /authentication
 ```javascript
 RESPONSE: OK
@@ -31,6 +31,7 @@ A example flow in the code could be something like this:
 register = readFromDisc()
 if (register === undefined) {
     register = doRegister(bootstrap.secret, bootstrap.access, deviceId)
+    register.writeToDisc()
 }
 
 while(1) {
