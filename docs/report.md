@@ -16,7 +16,7 @@ This Post object includes on version, header and a list of data where data can b
   "header": {                          // Mandatory
     "seqNo": 123,                      // Optional, logical sequence of the order reports has been created
     "ts": "2014-08-16T02:08:00.000Z",  // Mandatory, the timestamp when the report was sent from client
-    "tags": {                          // Optional, this tags will be joined into the data tags.
+    "tags": {                          // Optional, these tags will be joined into the data tags.
        "hostname": "sdf12345",
        "myTag2": "clientTag123",
         ...
@@ -38,7 +38,7 @@ RESPONSE: 200 OK
 Content-Type: application/json
 {}
 ``` 
-You as device owner can create your own data type without define it in the GAUS admin UI before but there are some pre-define types.
+You as device owner can create your own data type without defining it in the GAUS admin UI before, there are also some predefined types.
 
 The main structure is that all types that start with event.* will be handled as "events" and all data types that started with
 metric.* will be handled as metrics.
@@ -46,7 +46,7 @@ List of reserved data types:
 
 ##### event.update.Status
 
-This event should be sent under a client update. UpdateId is used to get the information about the source and target
+This event should be sent during a client update. UpdateId is used to get the information about the source and target
  versions and type. 
  ```javascript
 {

@@ -1,7 +1,7 @@
 # Authentication
 
-To be able to us the device API, the device need to authenticate it self. This is done by posting the device
-unique access and secret to GAUS and get back a [JWT](https://jwt.io) token. This token has time to live date,
+To be able to use the device API, the device needs to authenticate itself. This is done by posting the device
+unique access and secret to GAUS and getting back a [JWT](https://jwt.io) token. This token has a time to live date,
 so when it expires, the device need to re-authenticate.
 
 
@@ -15,7 +15,7 @@ so when it expires, the device need to re-authenticate.
 }
 ```
 The response include the deviceGUID and productGUID. The device need them to build up the URL for [check-for-update](../docs/check-for-update.md)
-and [report](../docs/report.md). This three values should be store in the session memory and could always been retrieved by doing a new /authentication
+and [report](../docs/report.md). These three values should be stored in the session memory and can always been retrieved by doing a new /authentication
 ```javascript
 RESPONSE: OK
 {
@@ -43,14 +43,14 @@ while(1) {
     } else {
         // Handle error
     }
-    sleep register.poolIntervallSeconds
+    sleep register.pollIntervalSeconds
 }
 
 ```
 
 ## JWT token
 
-The JWT token that is returned [rfc7519](https://tools.ietf.org/html/rfc7519) from the authentication call has this structure:
+The JWT token ([rfc7519](https://tools.ietf.org/html/rfc7519)) that is returned from the authentication call has this structure:
 
 ```javascript
 {
@@ -68,7 +68,7 @@ For more details of the different fields, see the iso standard [documentation](h
 
 The productGUID and deviceGUID exist both in the JWT token and in the return JSON for easier extraction for the client.
 
-The GAUS JWT token grant access to:
+The GAUS JWT token grants access to:
 ```javascript
     'GET', `/device/${productGUID}/${deviceGUID}/*`
     'POST', `/device/${productGUID}/${deviceGUID}/*    
