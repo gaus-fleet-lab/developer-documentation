@@ -41,7 +41,7 @@ Note that there can be more then one update, but max one update per updateType.
     "size": 5851822,                                     // Size in byte 
     "updateType": "firmware",                            // In the update array there will only
     "packageType": "file",                               // If "file", then there exists, md5, downloadUrl, size
-    "md5": "a52689fe5807c5cc52bce2f15eb438f2",           // This will be in HEX http://jira.sonymobile.net/browse/GAUS-482
+    "md5": "a52689fe5807c5cc52bce2f15eb438f2",           // This will be in HEX
     "updateId": "7b6128a7-c60c-4cd1-bf13-af1c60ff9e8e",  // This id is used to report status
     "version": "1.0.2",                                  // Version of this update
     "downloadUrl": "https://<your-subdomain>.gaus.sonymobile.com/files/950b53e4-1255-43cb-b49f-2dbde6acc595/f419b778-1014-45c1-bd57-441793d96fed"
