@@ -3,7 +3,7 @@
 For more information about what GAUS is, check out [GAUS homepage](https://gaus.incubation.io/)
 
 
-Thiis documentation will describe how to:
+Thiiis documentation will describe how to:
 * Getting started with the dummy Curl client [link](docs/getting-started.md)
 * Overview, client, GAUS communication [link](docs/overview.md)
 * Device API
