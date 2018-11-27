@@ -1,9 +1,9 @@
 # Update client Curl for GAUS
 
 ## 1a) First time setup
-* Go to ```https://<your-subdomain>.sonymobile.com/admin``` and login with user and password that you have received in your mail inbox
+* Go to `https://<your-subdomain>.sonymobile.com/admin` and login with user and password that you have received in your mail inbox
 * Click on product and create new product, name it and optionally add some query-parameters
-* Extract the product secret and product access to a file called ```bootstrap.conf```, e.g.:
+* Extract the product secret and product access to a file called `bootstrap.conf`, e.g.:
 
 ```javascript
  cat <<EOT >> bootstrap.conf

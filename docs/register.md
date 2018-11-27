@@ -16,7 +16,7 @@ The register can be done in different places:
 
 * Extract/create/retrieve the deviceId (Could be MAC address, series-number or generated data)
   There is no check that the deviceId will be unique on the backend, meaning that you can register two devices
-  with the same deviceId but the devices will get two unique deviceGUID. This is done because of example if the
+  with the same deviceId but the devices will get two unique deviceGUID. This is done because for example if the
   device get refurbished or factory reset. It can do a re-registration.
 
 * POST the to the register url with the deviceId, product accessKey and product secretKey

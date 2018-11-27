@@ -10,7 +10,7 @@ deviceAuthParameters.accessKey  | device.data               | Unique value for d
 deviceAuthParameters.secretKey  | device.data               | Unique value for device to access the authentication API
 productGUID                     | Session memory            | Backend generated Id to track the product.
 token                           | Session memory            | Backend generated [JWT](https://jwt.io/) token used to authenticate to the device API,
-pollIntervalSeconds             | device.data               | Backend configuration that will be sent to update client when on-bording and optional when check-for-update.
+pollIntervalSeconds             | device.data               | Backend configuration that will be sent to update client when on-boarding and optional when check-for-update.
 
 ![overview](../pics/overview.png)
 
