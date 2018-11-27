@@ -1,6 +1,6 @@
 # Developer documentation for GAUS client
 
-[!Build status](https://codebuild.eu-west-1.amazonaws.com/badges?uuid=eyJlbmNyeXB0ZWREYXRhIjoiVURYWlJWOS81ZmlLeEFGcWh1Q0Z5U2pVZktuaHZaTGlIQ21YK2MrZEhQZ0dqMi9xeTRBVEEyZllCWHh0VjFLNnJ4a1VvZ01xdGFOQ0tqVnpQeDFFbk1jPSIsIml2UGFyYW1ldGVyU3BlYyI6IkRSKzlrMG5WcktGUFhqQmYiLCJtYXRlcmlhbFNldFNlcmlhbCI6MX0%3D&branch=master)
+[![Build status](https://codebuild.eu-west-1.amazonaws.com/badges?uuid=eyJlbmNyeXB0ZWREYXRhIjoiVURYWlJWOS81ZmlLeEFGcWh1Q0Z5U2pVZktuaHZaTGlIQ21YK2MrZEhQZ0dqMi9xeTRBVEEyZllCWHh0VjFLNnJ4a1VvZ01xdGFOQ0tqVnpQeDFFbk1jPSIsIml2UGFyYW1ldGVyU3BlYyI6IkRSKzlrMG5WcktGUFhqQmYiLCJtYXRlcmlhbFNldFNlcmlhbCI6MX0%3D&branch=master)](https://eu-west-1.console.aws.amazon.com/codesuite/codebuild/projects/cdeveloper-documentation/details)
 
 For more information about what GAUS is, check out [GAUS homepage](https://gaus.incubation.io/)
 
