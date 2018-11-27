@@ -19,7 +19,7 @@ productAuthParameters.secretKey
 GUID
 deviceAuthParameters.secretKey
 pollIntervalSeconds
-on-bording
+on-boarding
 serie-number
 url
 event.update.Status
