@@ -20,7 +20,7 @@ GUID
 deviceAuthParameters.secretKey
 pollIntervalSeconds
 on-boarding
-serie-number
+series-number
 url
 event.update.Status
 v_strings.phase
