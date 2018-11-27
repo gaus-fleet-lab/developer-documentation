@@ -1,9 +1,9 @@
 # Update client Curl for GAUS
 
 ## 1a) First time setup
-* Go to https://<your-subdomain>.sonymobile.com/admin and login with user and password that you have received in your mail inbox
+* Go to ```https://<your-subdomain>.sonymobile.com/admin``` and login with user and password that you have received in your mail inbox
 * Click on product and create new product, name it and optionally add some query-parameters
-* Extract the product secret and product access to a file called 'bootstrap.conf', e.g.:
+* Extract the product secret and product access to a file called ```bootstrap.conf```, e.g.:
 
 ```javascript
  cat <<EOT >> bootstrap.conf
@@ -19,7 +19,8 @@
  `./register.sh bootstrap.conf`
 
 # 2) Now you can run device-check-for-update.sh and device-report.sh
-* By pointing out the device.data file to the scripts (check-for-update.sh|report.sh) will have access to the backend
+* By pointing out the device.data file to the scripts [check-for-update.sh](../curl/check-for-update.sh) and
+ [report.sh](../curl/report.sh) will have access to the backend
  `./check-for-update.sh device.data`
 or
  `./report.sh device.data`
