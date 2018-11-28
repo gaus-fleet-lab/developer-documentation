@@ -1,0 +1,60 @@
+# markdown-spellcheck spelling configuration file
+# Format - lines beginning # are comments
+# global dictionary is at the start, file overrides afterwards
+# one word per line, to define a file override use ' - filename'
+# where filename is relative to this configuration file
+GAUS
+bootstrap.conf
+GAUS_URL
+PRODUCT_ACCESS_KEY
+XXX
+JWT
+deviceGUID
+productGUID
+rfc7519
+PRODUCT_GUID
+DEVICE_GUID
+productAuthParameters.accessKey
+productAuthParameters.secretKey
+GUID
+deviceAuthParameters.secretKey
+pollIntervalSeconds
+on-boarding
+series-number
+url
+event.update.Status
+v_strings.phase
+v_strings.status
+v_strings.updateId
+updateId
+UpdateId
+LICENSE.md
+v_strings.statusCode
+v_strings.logLine
+event.generic.
+v_ints
+ints
+v_strings
+v_floats
+metric.gauge.
+iso
+api
+400
+1
+updateType
+accessKey
+secretKey
+bootstrap.conf.
+register.sh
+device.data
+backend
+json
+deviceId
+deviceAuthParameters.accessKey
+TimeToLive
+Gaus
+influxDB
+metric.counter.
+1a
+1b
+report.sh
