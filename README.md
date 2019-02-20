@@ -13,6 +13,7 @@ This documentation will describe how to:
   * [Authentication](docs/authentication.md)
   * [Check for update](docs/check-for-update.md)
   * [Report](docs/report.md)
+  * [API versioning](docs/apiversion.md)
 
 
 ## License
