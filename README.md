@@ -4,6 +4,7 @@
 
 For more information about what GAUS is, check out [GAUS homepage](https://gaus.incubation.io/)
 
+Getting to know more about some vital concepts in GAUS this is a good place to [start](docs/concepts.md)
 
 This documentation will describe how to:
 * Getting started with the dummy Curl client [link](docs/getting-started.md)

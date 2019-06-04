@@ -58,3 +58,7 @@ metric.counter.
 1a
 1b
 report.sh
+device-id
+device-guid
+product-guid
+register.md
