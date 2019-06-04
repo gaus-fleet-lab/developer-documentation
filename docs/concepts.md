@@ -6,14 +6,12 @@ Parameters and update-type are used as essential parts the product definition.
 Parameters and update-types are used to group devices into logical sets that can be operated on, e.g. make an update only for a certain set of devices.
 
 ## Parameters
+Two different types of parameters exists, one type used in device registration and another type used in all other device api calls.
+This section describes the second type of parameters used in all device api calls except the registration call (for information regarding the registration, see [docs/register.md](../docs/register.md).
 
-Parameters are used to distinguish your individual devices from each other and there are only one parameter that is mandatory, Device ID. Device ID can be either something that already exists in your product like:
-* mac address
-* serial-number
+Parameters are used to distinguish your individual devices from each other 
 
-If your device does not have a unique identifier GAUS will assign one for it when the device does the registration. This parameter is mandatory when using the device api.
-
-The recommendation is to have at least a few more parameters that can be used for device selection. Example on parameters can be:
+The recommendation is to have at least a few parameters that can be used for device selection. Example on parameters can be:
 * Location
 * Country
 * Hardware revision
@@ -34,7 +32,7 @@ Update-type are used for the parts in the device that can be updated, and all de
 
 
 ## Usage of parameters and update-types
-A device that is connected to GAUS will typically periodically exercise the check-for-update api-call, except for the authentication parameters only the device id and at least one update-type is mandatory but since both parameters and update-types can be used for distribution and analysis the recommendation is to let all api calls contain the parameters and update-type versions so that you will be able to do the logical groups you want to later when distributing software updates to your devices.
+A device that is connected to GAUS will typically periodically exercise the check-for-update api-call, except for the authentication parameters, only (at least) one update-type is mandatory but since both parameters and update-types can be used for distribution and analysis the recommendation is to let all api calls contain the parameters and update-type versions so that you will be able to do the logical groups you want to later when distributing software updates to your devices.
 Examples of different types of update scenarios:
 * Canary
 * beta users
@@ -42,3 +40,5 @@ Examples of different types of update scenarios:
 * Build on commit test
 * distribution of a new modem to only devices with a certain hardware revision.
 * Distribution of an application/resource file to devices with at least a certain OS version
+
+Before the device api call is handled by the GAUS backend there will be a step with decorating the call with server-based parameters, they include device-id, device-guid and product-guid so they can also be used when selecting your target, either when distributing updates or when analyzing results from devices.
