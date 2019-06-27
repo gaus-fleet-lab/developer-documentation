@@ -34,7 +34,6 @@ Update-type are used for the parts in the device that can be updated, and all de
 * applications
 * configuration-file
 
-An update-type always point on a parameter. Example update-type "firmware" has a parameter "firmware-version".
 If the device does not provide the update-type parameter (firmware-version), the backend will always return the "latest"
 update.
 
