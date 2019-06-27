@@ -13,8 +13,7 @@ First step is to create a Product from the Administration UI.
 
 * Press “ADD PRODUCT”, give it a name (MyProduct) and an update-type (firmware) with a parameter (firmware-version)
 
-* When a Product is created, you will get a product accessKey and secretKey to be used for on-
-boarding devices. Save the those values in a file called bootstrap.conf.
+* When a Product is created, you will get a product accessKey and secretKey to be used for on-boarding devices. Save the those values in a file called bootstrap.conf.
 (They cannot be retrieved again)
  
 In bootstrap.conf file, add also:
