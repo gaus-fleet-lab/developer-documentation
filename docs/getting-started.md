@@ -9,11 +9,11 @@ First step is to create a Product from the Administration UI.
 
 * Login to GAUS administration UI.
 
-* Follow instructions how to “Add Product” from the User Guide.
- User Guide is available in the upper bar of the Administration UI.
+* On the left side press "Products", this will open up the products view.
 
-* When a Product is created, you will get a product accessKey and secretKey to be used for on-
-boarding devices. Save the those values in a file called bootstrap.conf.
+* Press “ADD PRODUCT”, give it a name (MyProduct) and an update-type (firmware) with a parameter (firmware-version)
+
+* When a Product is created, you will get a product accessKey and secretKey to be used for on-boarding devices. Save the those values in a file called bootstrap.conf.
 (They cannot be retrieved again)
  
 In bootstrap.conf file, add also:
@@ -33,7 +33,7 @@ cat <<EOT >> bootstrap.conf
 
 The first step for a device is to use the product access and secrets to register.
 When the device has registered it will get a device unique access and secret that
-is needed for authentication.  
+is needed for authentication.
 
 For more information: [overview picture](../docs/overview.md)
 ```
