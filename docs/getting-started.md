@@ -1,7 +1,7 @@
 ## Getting Started
 
 You need to get an invitation email from GAUS with user credentials. 
-(If missing, [contact us](mailto:gaus@sonymobile.com) for support)
+(If missing, [contact us](mailto:gaus@sony.com) for support)
 
 ### Create product
 
