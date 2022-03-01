@@ -48,3 +48,26 @@ Note that there can be more then one update, but max one update per updateType.
   ]
  }
 ```
+
+## Check-for-update supports etag
+The check-for-update api supports the [etag](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/ETag) meaning that the result will always return the etag header in this syntax: ETag: W/"..."
+
+If the If-None-Match header is used, the service will replay with http 304 if there are no updates.
+```javascript
+// First GET without etag
+ Authorization: Bearer ${token}
+ GET: /device/${productGUID}/${deviceGUID}/check-for-updates?firmware-version=1.0.0[&query-parameter-name=query-parameter-value]*
+
+ RESPONSE: 200 OK
+ ETag: W/"33a64df551425fcc55e4d42a148795d9f25f89d4"
+ {
+   "updates": []
+ }
+// Second GET with etag
+ Authorization: Bearer ${token}
+ If-None-Match: "33a64df551425fcc55e4d42a148795d9f25f89d4"
+ GET: /device/${productGUID}/${deviceGUID}/check-for-updates?firmware-version=1.0.0[&query-parameter-name=query-parameter-value]*
+
+ RESPONSE: 304 Not Modified
+
+```

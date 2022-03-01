@@ -29,6 +29,7 @@ This Post object includes on version, header and a list of data where data can b
       "v_strings": {"stringkey", "stringvalue", ...}, //Optional, if collecting strings
       "v_floats": {"floatkey", 1.1, ...},             //Optional, if collecting floats
       "v_ints": {"intkey", 1, ...},                   //Optional, if collecting ints
+      "data": "{\"complex\":\"data\"}"                //Optional, if collecting complex JSON (stringified)
       "tags": {"key": "value", ...}                   //Optional, Tags
     }, ...
   ]
