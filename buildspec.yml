@@ -1,6 +1,10 @@
 version: 0.2
 
 phases:
+  install:
+    runtime-versions:
+      nodejs: 14
   build:
     commands:
-    - docker build . -t gaus-test
+    - yarn install
+    - yarn run mdspell "docs/*.md" README.md curl/README.md --report --ignore-numbers

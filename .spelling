@@ -17,6 +17,7 @@ DEVICE_GUID
 productAuthParameters.accessKey
 productAuthParameters.secretKey
 GUID
+ETAG
 deviceAuthParameters.secretKey
 pollIntervalSeconds
 on-boarding
@@ -63,3 +64,5 @@ device-guid
 product-guid
 register.md
 MyProduct
+etag
+x-gaus

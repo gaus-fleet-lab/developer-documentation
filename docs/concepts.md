@@ -47,4 +47,4 @@ Examples of different types of update scenarios:
 * distribution of a new modem to only devices with a certain hardware revision.
 * Distribution of an application/resource file to devices with at least a certain OS version
 
-Before the device api call is handled by the GAUS backend there will be a step with decorating the call with server-based parameters, they include device-id, device-guid, product-guid and other serverside parameters (x-gaus-???) so they can also be used when selecting your target, either when distributing updates or when analysing results from devices.
+Before the device api call is handled by the GAUS backend there will be a step with decorating the call with server-based parameters, they include device-id, device-guid, product-guid and other server side parameters (x-gaus-???) so they can also be used when selecting your target, either when distributing updates or when analysing results from devices.
